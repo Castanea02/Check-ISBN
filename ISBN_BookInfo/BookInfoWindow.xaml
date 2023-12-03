@@ -1,0 +1,20 @@
+﻿<Window x:Class="ISBN_BookInfo.BookInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Book Information" Height="300" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="BookThumbnail" Grid.Column="0" Width="100" Height="150" Margin="10"/>
+
+        <StackPanel Grid.Column="1" Margin="10">
+            <Label x:FieldModifier="public" x:Name="BookTitleLabel" Content="" FontSize="16" FontWeight="Bold" Margin="0,0,0,5"/>
+            <Label x:FieldModifier="public" x:Name="AuthorLabel" Content="" Margin="0,0,0,5"/>
+            <Label x:FieldModifier="public" x:Name="PublisherLabel" Content="" Margin="0,0,0,5"/>
+            <!-- 추가적인 도서 정보를 표시할 Label을 필요에 따라 추가 -->
+        </StackPanel>
+    </Grid>
+</Window>
